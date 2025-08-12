@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điều khoản & Chính sách - Twie Crochet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <!-- Popup chào mừng -->
+    <div class="popup-overlay" id="welcomePopup">
+        <div class="popup-content">
+            <img src="./assets/anh/anhsanpham/mkbegacatim.jpg" alt="Móc Khóa Bé Gà Cà Tím" loading="lazy">
+            <h2>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                Chào mừng bạn!
+            </h2>
+            <p>Khám phá những sản phẩm móc len đáng yêu tại Twie Crochet nhé! 🧶</p>
+            <div class="popup-buttons">
+                <button onclick="closePopup()">Đóng</button>
+                <button onclick="viewProducts()">Xem Sản Phẩm</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="header-frame">
+        <header>
+            <h1>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/>
+                </svg>
+                Twie Crochet
+            </h1>
+        </header>
+    </section>
+
+    <section class="nav-frame">
+        <nav>
+            <button class="mobile-nav-toggle" onclick="toggleMobileNav()" aria-label="Toggle menu">
+                ☰
+            </button>
+            <div class="desktop-nav">
+                <a href="index.html">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                    </svg>
+                    Trang chủ
+                </a>
+                <a href="index.html#products">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6zM3 6h18"/>
+                    </svg>
+                    Sản phẩm
+                </a>
+                <a href="index.html#footer">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16v12H5.17L4 17.17V4m0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H4z"/>
+                    </svg>
+                    Liên hệ
+                </a>
+                <a href="policy.html" class="active">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+                        <path d="M14 2v6h6M16 13H8m8 4H8m8-8H8"/>
+                    </svg>
+                    Điều khoản & Chính sách
+                </a>
+            </div>
+            <div class="mobile-nav">
+                <a href="index.html">Trang chủ</a>
+                <a href="index.html#products">Sản phẩm</a>
+                <a href="index.html#footer">Liên hệ</a>
+                <a href="policy.html" class="active">Điều khoản & Chính sách</a>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+            </button>
+        </nav>
+    </section>
+
+    <main>
+        <section class="policy-frame">
+            <h2>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+                    <path d="M14 2v6h6M16 13H8m8 4H8m8-8H8"/>
+                </svg>
+                Điều khoản & Chính sách
+            </h2>
+            <div class="policy-content">
+                <h3>1. Điều khoản sử dụng</h3>
+                <p>Chào mừng bạn đến với website Twie Crochet. Khi sử dụng website này, bạn đồng ý tuân thủ các điều khoản sau:</p>
+                <ul>
+                    <li>Không sao chép, chỉnh sửa hoặc phân phối nội dung từ website mà không có sự cho phép của Twie Crochet.</li>
+                    <li>Không sử dụng website cho các mục đích bất hợp pháp hoặc gây hại cho hệ thống.</li>
+                    <li>Mọi thông tin cung cấp (họ tên, email, số điện thoại) phải chính xác và hợp pháp.</li>
+                </ul>
+                <h3>2. Chính sách bảo mật</h3>
+                <p>Chúng tôi cam kết bảo vệ thông tin cá nhân của bạn:</p>
+                <ul>
+                    <li>Thông tin thu thập (họ tên, email, số điện thoại, đơn hàng) chỉ được sử dụng để xử lý đơn hàng và cải thiện dịch vụ.</li>
+                    <li>Không chia sẻ thông tin cá nhân với bên thứ ba, trừ khi có sự đồng ý của bạn hoặc theo yêu cầu pháp luật.</li>
+                    <li>Áp dụng các biện pháp bảo mật (mã hóa, tường lửa) để bảo vệ dữ liệu.</li>
+                </ul>
+                <h3>3. Chính sách đổi trả</h3>
+                <p>Chúng tôi hỗ trợ đổi trả sản phẩm trong các trường hợp sau:</p>
+                <ul>
+                    <li>Sản phẩm lỗi do nhà sản xuất (hư hỏng, sai mẫu) trong vòng 7 ngày kể từ khi nhận hàng.</li>
+                    <li>Khách hàng cần cung cấp hình ảnh/video chứng minh lỗi và liên hệ qua Zalo (0377 133 854).</li>
+                    <li>Không áp dụng đổi trả cho sản phẩm đã sử dụng hoặc hư hỏng do khách hàng.</li>
+                    <li>Chi phí vận chuyển đổi trả do Twie Crochet chi trả nếu lỗi thuộc về chúng tôi.</li>
+                </ul>
+                <h3>4. Chính sách giao hàng</h3>
+                <p>Thông tin về giao hàng:</p>
+                <ul>
+                    <li>Thời gian giao hàng: 3-7 ngày làm việc (tùy khu vực).</li>
+                    <li>Phí giao hàng: Tính dựa trên khoảng cách và đơn vị vận chuyển (Giao Hàng Nhanh, Giao Hàng Tiết Kiệm).</li>
+                    <li>Thông tin đơn hàng sẽ được cập nhật qua email hoặc Zalo.</li>
+                    <li>Liên hệ ngay nếu có vấn đề về giao hàng: 0377 133 854.</li>
+                </ul>
+                <h3>5. Liên hệ</h3>
+                <p>Nếu bạn có thắc mắc về điều khoản hoặc chính sách, vui lòng liên hệ:</p>
+                <ul>
+                    <li>Email: <a href="mailto:info@twiecrochet.com">info@twiecrochet.com</a></li>
+                    <li>Zalo/Số điện thoại: <a href="tel:0377133854">0377 133 854</a></li>
+                    <li>Facebook: <a href="https://facebook.com/twiecrochet" target="_blank">Twie Crochet</a></li>
+                    <li>Instagram: <a href="https://instagram.com" target="_blank">Twie Crochet</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <section class="footer-frame" id="footer">
+        <footer>
+            <p>&copy; Twie Crochet. All rights reserved.</p>
+            <p>Liên hệ: <a href="mailto:info@twiecrochet.com">info@twiecrochet.com</a> | <a href="tel:0377133854">0377 133 854</a> <button class="copy-phone" onclick="copyPhoneNumber()">Sao chép</button></p>
+            <p>📍 Địa chỉ (mới): Đường HL2, Ấp Tân Trung Giồng A, xã Tiểu Cần, tỉnh Vĩnh Long</p>
+            <p>📍 Địa chỉ (cũ): Đường HL2, Ấp Tân Trung Giồng A, xã Hiếu Trung, huyện Tiểu Cần, tỉnh Trà Vinh</p>
+            <div class="footer-nav">
+                <div class="footer-nav-column">
+                    <h3>Sản phẩm</h3>
+                    <ul>
+                        <li><a href="index.html#products" data-category="moc-khoa">▶ Móc khóa</a></li>
+                        <li><a href="index.html#products" data-category="tui-len">▶ Túi len</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h3>Yêu thích</h3>
+                    <ul id="favoriteList">
+                        <!-- Danh sách yêu thích sẽ được thêm bằng JS -->
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h3>Liên hệ</h3>
+                    <ul>
+                        <li><a href="https://zalo.me/0377133854" target="_blank">▶ Zalo</a></li>
+                        <li><a href="https://facebook.com/twiecrochet" target="_blank">▶ Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank">▶ Instagram</a></li>
+                        <li><a href="tel:0377133854">▶ Gọi ngay</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15746.668672054423!2d106.1862152!3d9.812847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0e27b8b7b7b7b%3A0x1b7b7b7b7b7b7b7b!2zVGnhurN1IEPhu6FuLCBUcuG6oSBUaMOgbmgsIFZp4buHbiBMb25n!5e0!3m2!1svi!2s!4v1698765432100" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com/twiecrochet" target="_blank" title="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/>
+                    </svg>
+                </a>
+                <a href="https://zalo.me/0377133854" target="_blank" title="Zalo" class="zalo-btn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                    </svg>
+                    Chat Zalo
+                </a>
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 4a6 6 0 100 12 6 6 0 000-12zm6-1a1 1 0 100-2 1 1 0 000 2z"/>
+                    </svg>
+                </a>
+                <a href="tel:0377133854" class="call-btn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 17.17L18.83 16l-3.63-3.63a4 4 0 00-5.66 0L5.17 16 4 17.17V4h16v13.17z"/>
+                    </svg>
+                    Gọi Ngay
+                </a>
+            </div>
+        </footer>
+    </section>
+
+    <button class="back-to-top" onclick="scrollToTop()">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5m-7 7l7-7 7 7"/>
+        </svg>
+    </button>
+    <button class="zalo-float" onclick="window.open('https://zalo.me/0377133854', '_blank')">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+        </svg>
+        Chat Zalo
+    </button>
+    <div id="toast"></div>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/deviceDetection.js"></script>
+</body>
+  </html>
