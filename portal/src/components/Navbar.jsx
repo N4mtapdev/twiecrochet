@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { CAI_DAT } from '../data.js'
+import { LogoImg } from './Logo.jsx'
 
 const LINKS = [
   { to: '/', label: 'Trang chủ' },
