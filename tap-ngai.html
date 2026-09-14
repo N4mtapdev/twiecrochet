@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cổng Thông Tin Chuyển Đổi Số & Quản Trị Đoàn Thanh Niên xã Tập Ngãi — Vĩnh Long</title>
-<meta name="description" content="Cổng thông tin chuyển đổi số xã Tập Ngãi, tỉnh Vĩnh Long — tra cứu thông tin ấp, trụ sở hành chính, cán bộ chính quyền địa phương và dịch vụ công ích.">
-<meta name="keywords" content="chuyển đổi số, xã Tập Ngãi, Vĩnh Long, tra cứu ấp, chính quyền điện tử, đoàn thanh niên">
-<meta name="theme-color" content="#1e3a8a">
+<title>Cổng Theo Dõi Tin Tức & Tra Cứu Thông Tin — Đoàn TNCS Hồ Chí Minh xã Tập Ngãi, Vĩnh Long</title>
+<meta name="description" content="Cổng thông tin theo dõi tin tức, tra cứu thông tin ấp, trụ sở hành chính, cán bộ và dịch vụ công ích của Đoàn TNCS Hồ Chí Minh xã Tập Ngãi, tỉnh Vĩnh Long.">
+<meta name="keywords" content="chuyển đổi số, Đoàn xã Tập Ngãi, tra cứu ấp, Vĩnh Long, dịch vụ công, chính quyền điện tử">
+<meta name="theme-color" content="#1e40af">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Cổng Thông Tin Chuyển Đổi Số xã Tập Ngãi — Vĩnh Long">
-<meta property="og:description" content="Hệ thống tra cứu thông tin ấp, trụ sở hành chính, cán bộ và dịch vụ công ích xã Tập Ngãi.">
+<meta property="og:title" content="Cổng Theo Dõi Tin Tức & Tra Cứu Thông Tin — xã Tập Ngãi">
+<meta property="og:description" content="Tra cứu thông tin ấp, trụ sở hành chính, cán bộ và dịch vụ công ích nhanh chóng, chính xác.">
 <meta property="og:locale" content="vi_VN">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -20,555 +20,760 @@
 
 <style>
 :root{
-  --navy:#0f172a;
-  --blue:#1e3a8a;
-  --blue-2:#2563eb;
-  --sky:#38bdf8;
-  --gold:#fbbf24;
-  --bg:#f1f5f9;
-  --card:#ffffff;
-  --text:#0f172a;
-  --muted:#64748b;
-  --line:#e2e8f0;
-  --grad:linear-gradient(135deg,#1e3a8a 0%,#2563eb 55%,#38bdf8 130%);
-  --shadow:0 10px 30px rgba(15,23,42,.08);
-  --shadow-lg:0 20px 50px rgba(15,23,42,.14);
+  --blue:#2563eb; --blue-deep:#1d4ed8; --navy:#172554; --gold:#fbbf24;
+  --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --bg:#f8fafc;
+  --grad-btn:linear-gradient(135deg,#2563eb,#1d4ed8);
+  --grad-hero:linear-gradient(135deg,#1d4ed8,#1e40af,#172554);
+  --shadow-card:0 8px 24px rgba(0,0,0,.08);
+  --shadow-float:0 12px 36px rgba(0,0,0,.25);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{
-  font-family:'Nunito',system-ui,sans-serif;
-  font-size:16.5px;color:var(--text);background:var(--bg);
-  line-height:1.65;
-}
-h1,h2,h3,h4{font-family:'Quicksand',sans-serif;font-weight:700;line-height:1.25}
+body{font-family:'Nunito','Quicksand',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6}
 img{max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer}
-.wrap{max-width:1120px;margin:auto;padding:0 20px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 
-/* ============ NAV ============ */
-.nav{
-  position:sticky;top:0;z-index:900;
-  background:rgba(15,23,42,.85);backdrop-filter:blur(12px);
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-.nav-inner{display:flex;align-items:center;gap:16px;padding:13px 20px;max-width:1120px;margin:auto}
-.brand{display:flex;align-items:center;gap:11px;color:#fff}
-.brand .logo{
-  width:42px;height:42px;border-radius:12px;flex:none;
-  background:var(--grad);display:flex;align-items:center;justify-content:center;
-  font-size:21px;box-shadow:0 6px 18px rgba(37,99,235,.45);
-}
-.brand b{font-family:'Quicksand';font-size:16.5px;display:block;line-height:1.2}
-.brand span{font-size:11.5px;color:#94a3b8;display:block}
+/* ============ NAVBAR ============ */
+.nav{position:sticky;top:0;z-index:900;background:rgba(15,23,42,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-inner{max-width:1200px;margin:auto;display:flex;align-items:center;gap:14px;padding:10px 24px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff}
+.brand .logo{width:40px;height:40px;border-radius:50%;flex:none;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+.brand b{font-family:'Quicksand';font-size:14.5px;display:block;line-height:1.25}
+.brand span{font-size:11px;color:#94a3b8;display:block}
 .nav-links{display:flex;gap:2px;margin-left:auto}
-.nav-links a{
-  color:#cbd5e1;font-size:14px;font-weight:600;padding:8px 13px;border-radius:9px;transition:.2s;
-}
-.nav-links a:hover{background:rgba(255,255,255,.08);color:#fff}
-.nav-links a.on{background:rgba(56,189,248,.15);color:var(--sky)}
-.menu-btn{display:none;margin-left:auto;background:rgba(255,255,255,.08);border:none;
-  color:#fff;font-size:20px;width:42px;height:42px;border-radius:10px}
+.nav-links a{color:#cbd5e1;font-size:13.5px;font-weight:600;padding:8px 12px;border-radius:9px;transition:.2s}
+.nav-links a:hover,.nav-links a.on{background:rgba(255,255,255,.1);color:#fff}
+.nav-cta{background:var(--grad-btn);color:#fff;font-weight:700;font-size:13.5px;border:none;padding:9px 18px;border-radius:10px;box-shadow:0 4px 14px rgba(37,99,235,.45);transition:.2s;margin-left:6px}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(37,99,235,.55)}
+.menu-btn{display:none;margin-left:auto;background:rgba(255,255,255,.08);border:none;color:#fff;font-size:20px;width:42px;height:42px;border-radius:10px}
 
 /* ============ HERO ============ */
-.hero{
-  position:relative;overflow:hidden;color:#fff;
-  background:
-    radial-gradient(900px 400px at 85% -10%, rgba(56,189,248,.25), transparent 60%),
-    radial-gradient(700px 380px at -10% 110%, rgba(251,191,36,.12), transparent 55%),
-    var(--navy);
-  padding:74px 0 96px;
-}
-.hero::after{
-  content:"";position:absolute;inset:auto 0 -1px 0;height:70px;
-  background:var(--bg);
-  clip-path:polygon(0 100%,100% 100%,100% 55%,0 0);
-}
-.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
-.badge{
-  display:inline-flex;align-items:center;gap:8px;
-  background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.35);
-  color:var(--sky);font-size:13px;font-weight:700;
-  padding:6px 14px;border-radius:999px;margin-bottom:18px;
-}
-.hero h1{font-size:clamp(26px,4.2vw,42px);letter-spacing:-.5px;margin-bottom:14px}
-.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--sky),#7dd3fc);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{color:#94a3b8;font-size:16.5px;max-width:52ch;margin-bottom:26px}
-.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:12px 24px;border-radius:12px;font-weight:800;font-size:15px;
-  transition:.22s;border:none;
-}
-.btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 26px rgba(37,99,235,.4)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(37,99,235,.5)}
-.btn-ghost{background:rgba(255,255,255,.08);color:#e2e8f0;border:1px solid rgba(255,255,255,.16)}
-.btn-ghost:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
+.hero{position:relative;width:100%;min-height:460px;background:var(--grad-hero);color:#fff;padding:55px 20px 110px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;pointer-events:none}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,42,.18),rgba(15,23,42,.08),rgba(15,23,42,.28));z-index:1;pointer-events:none}
+.hero-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;max-width:800px;width:100%;margin-top:15px}
+.hero-logo{width:110px;height:110px;object-fit:contain;margin-bottom:12px;filter:drop-shadow(0 6px 16px rgba(0,0,0,.25))}
+.hero-title{font-family:'Quicksand';font-size:36px;font-weight:900;color:#fff;letter-spacing:.5px;margin:0 0 6px;text-shadow:0 4px 12px rgba(0,0,0,.3);line-height:1.25;text-transform:uppercase}
+.hero-sub{font-size:17px;font-weight:600;color:rgba(255,255,255,.95);margin-bottom:4px}
+.hero-desc{font-size:14px;color:rgba(255,255,255,.8);margin-bottom:28px}
+.search-box{background:#fff;border-radius:40px;padding:6px 6px 6px 20px;display:flex;align-items:center;width:100%;max-width:620px;box-shadow:var(--shadow-float);border:1px solid rgba(255,255,255,.4);transition:box-shadow .25s}
+.search-box:focus-within{box-shadow:0 16px 44px rgba(0,0,0,.32)}
+.search-box input{border:none;outline:none;font-size:15px;flex:1;background:transparent;color:var(--ink);padding:8px 12px;font-family:inherit}
+.search-btn{background:var(--grad-btn);color:#fff;border-radius:30px;height:44px;padding:0 28px;font-size:15px;font-weight:700;border:none;display:flex;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(37,99,235,.4);transition:.2s;flex-shrink:0}
+.search-btn:hover{filter:brightness(1.08)}
+.search-btn span{display:inline-block;transition:transform .2s}
+.search-btn:hover span{transform:translateX(3px)}
 
-/* hero card */
-.hero-card{
-  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
-  border-radius:20px;padding:26px;backdrop-filter:blur(8px);
-  box-shadow:var(--shadow-lg);
-}
-.hero-card h3{font-size:15px;color:#cbd5e1;margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.stat{
-  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
-  border-radius:14px;padding:15px 16px;
-}
-.stat b{font-family:'Quicksand';font-size:22px;display:block;color:#fff}
-.stat span{font-size:12.5px;color:#94a3b8}
-.stat.gold b{color:var(--gold)}
+/* ============ STATS ============ */
+.stats-wrap{position:relative;z-index:10;max-width:1200px;margin:-52px auto 0;padding:0 24px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat-card{background:#fff;border-radius:18px;padding:18px 20px;box-shadow:var(--shadow-card);border:1px solid var(--line);display:flex;align-items:center;gap:14px;transition:transform .25s,box-shadow .25s}
+.stat-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(0,0,0,.12)}
+.icon-box{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.stat-value{font-family:'Quicksand';font-size:20px;font-weight:800;color:var(--ink);line-height:1.25}
+.stat-label{font-size:13px;color:var(--muted);font-weight:500;margin-top:2px}
 
-/* ============ STATS STRIP ============ */
-.strip{margin-top:-48px;position:relative;z-index:3}
-.strip-inner{
-  background:var(--card);border:1px solid var(--line);border-radius:18px;
-  box-shadow:var(--shadow-lg);
-  display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;
-}
-.strip-item{padding:24px 18px;text-align:center;border-right:1px solid var(--line)}
-.strip-item:last-child{border-right:none}
-.strip-item b{font-family:'Quicksand';font-size:24px;color:var(--blue);display:block}
-.strip-item span{font-size:13px;color:var(--muted)}
+/* ============ BANNER SLIDER ============ */
+.slider-wrap{width:100%;max-width:1250px;margin:32px auto 0;padding:0 24px;position:relative}
+.carousel{border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.12);background:#f1f5f9;position:relative;width:100%}
+.slides{display:flex;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+.slide{position:relative;width:100%;aspect-ratio:1200/480;overflow:hidden;flex-shrink:0;display:flex;align-items:flex-end;cursor:pointer}
+.slide .bg{position:absolute;inset:0;transition:transform .6s}
+.slide:hover .bg{transform:scale(1.02)}
+.slide-overlay{position:absolute;bottom:0;left:0;right:0;padding:36px 28px 18px;background:linear-gradient(to top,rgba(15,23,42,.85) 0%,rgba(15,23,42,.4) 60%,transparent 100%);color:#fff;display:flex;flex-direction:column;gap:4px;pointer-events:none}
+.slide-title{font-family:'Quicksand';font-size:22px;font-weight:800;color:#fff;margin:0;text-shadow:0 2px 4px rgba(0,0,0,.4);line-height:1.3}
+.slide-desc{font-size:13.5px;color:rgba(255,255,255,.92);margin:0;max-width:680px;line-height:1.4;text-shadow:0 1px 3px rgba(0,0,0,.3)}
+.nav-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:10;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.88);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;color:#1e40af;font-size:18px;box-shadow:0 4px 14px rgba(0,0,0,.18);transition:.2s;opacity:0}
+.carousel:hover .nav-arrow{opacity:1}
+.nav-arrow.prev{left:16px}.nav-arrow.next{right:16px}
+.nav-arrow:hover{background:#fff;transform:translateY(-50%) scale(1.06)}
+.dots{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:10}
+.dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.5);border:none;padding:0;transition:.25s}
+.dot.on{background:#fff;width:22px;border-radius:6px}
 
 /* ============ SECTIONS ============ */
-section{padding:64px 0}
-.sec-head{text-align:center;margin-bottom:36px}
-.sec-head .kicker{
-  color:var(--blue-2);font-weight:800;font-size:13px;letter-spacing:2px;text-transform:uppercase;
-}
-.sec-head h2{font-size:clamp(22px,3.2vw,30px);margin-top:6px}
-.sec-head p{color:var(--muted);margin-top:8px;font-size:15.5px}
+section{padding:56px 0 0}
+.sec-container{max-width:1250px;margin:0 auto;padding:0 24px}
+.sec-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px;gap:16px;flex-wrap:wrap}
+.sec-title{font-family:'Quicksand';font-size:26px;font-weight:800;color:var(--ink);margin:0 0 4px;letter-spacing:-.02em}
+.sec-sub{font-size:15px;color:var(--muted);margin:0;font-weight:500}
+.sec-kicker{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue-deep);background:#dbeafe;border-radius:999px;padding:5px 14px;margin-bottom:10px}
 
-/* tra cứu ấp */
-.search-box{
-  max-width:520px;margin:0 auto 30px;position:relative;
-}
-.search-box input{
-  width:100%;padding:15px 20px 15px 48px;
-  border:2px solid var(--line);border-radius:14px;
-  font-family:inherit;font-size:15.5px;outline:none;background:var(--card);
-  transition:.2s;
-}
-.search-box input:focus{border-color:var(--blue-2);box-shadow:0 0 0 4px rgba(37,99,235,.12)}
-.search-box .ic{position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:17px}
-.apa-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
-.apa{
-  background:var(--card);border:1px solid var(--line);border-radius:16px;
-  padding:20px;display:flex;gap:14px;align-items:center;
-  box-shadow:var(--shadow);transition:.25s;
-}
-.apa:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#bfdbfe}
-.apa .pin{
-  width:46px;height:46px;border-radius:13px;flex:none;
-  background:linear-gradient(135deg,#dbeafe,#e0f2fe);
-  display:flex;align-items:center;justify-content:center;font-size:20px;
-}
-.apa b{font-family:'Quicksand';font-size:15.5px;display:block}
-.apa span{font-size:12.5px;color:var(--muted)}
-.no-result{
-  text-align:center;color:var(--muted);padding:34px;display:none;
-}
+/* ============ THON CARDS ============ */
+.cards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.thon-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-card);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
+.thon-card:hover{transform:translateY(-5px);box-shadow:0 16px 38px rgba(0,0,0,.14);border-color:#bfdbfe}
+.card-header{position:relative;width:100%;height:180px;overflow:hidden;background:var(--ink);display:flex;align-items:center;justify-content:center}
+.card-header .emoji{font-size:64px;filter:drop-shadow(0 6px 14px rgba(0,0,0,.3));transition:transform .5s}
+.thon-card:hover .card-header .emoji{transform:scale(1.15) rotate(-4deg)}
+.card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,23,42,.88) 0%,rgba(15,23,42,.35) 60%,transparent 100%)}
+.header-content{position:absolute;bottom:0;left:0;right:0;padding:16px 20px;color:#fff;z-index:2}
+.thon-title{font-family:'Quicksand';font-size:20px;font-weight:800;color:#fff;margin:0 0 2px;text-shadow:0 2px 6px rgba(0,0,0,.35);line-height:1.3}
+.thon-sub{font-size:12.5px;color:rgba(255,255,255,.8)}
+.card-body{padding:18px 20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.info-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.info-item{display:flex;align-items:center;gap:12px}
+.info-item b{font-family:'Quicksand';font-size:16.5px;font-weight:800;display:block;line-height:1.2}
+.info-item span{font-size:12px;color:var(--muted)}
+.icon-ho{color:#d97706;font-size:17px}
+.icon-dan{color:var(--blue);font-size:17px}
+.nv-row{display:flex;align-items:flex-start;gap:8px;font-size:13.5px;color:var(--muted);line-height:1.45;min-height:40px}
+.icon-loc{color:#ef4444;font-size:16px;flex-shrink:0;margin-top:2px}
+.nv-text{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-footer{padding-top:12px;border-top:1px solid #f1f5f9;display:flex;justify-content:flex-end}
+.detail-btn{border:none;background:transparent;color:var(--blue);font-weight:700;font-size:13.5px;display:flex;align-items:center;gap:5px;padding:0;transition:.2s}
+.detail-btn:hover{color:var(--blue-deep);gap:9px}
+.no-result{text-align:center;color:var(--muted);padding:40px;display:none;font-size:15px}
 
-/* địa lý */
-.geo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.geo{
-  background:var(--card);border:1px solid var(--line);border-radius:16px;
-  padding:22px;text-align:center;box-shadow:var(--shadow);transition:.25s;
-}
-.geo:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.geo .dir{
-  width:50px;height:50px;margin:0 auto 12px;border-radius:14px;
-  background:var(--grad);color:#fff;
-  display:flex;align-items:center;justify-content:center;
-  font-size:22px;font-weight:800;font-family:'Quicksand';
-}
-.geo b{display:block;font-family:'Quicksand';font-size:15.5px;margin-bottom:2px}
-.geo span{font-size:13px;color:var(--muted)}
-.map-wrap{
-  margin-top:26px;border-radius:18px;overflow:hidden;
-  border:1px solid var(--line);box-shadow:var(--shadow-lg);
-}
-.map-wrap iframe{width:100%;height:340px;border:0;display:block}
+/* ============ TIN TỨC ============ */
+.news-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-card);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.news-card:hover{transform:translateY(-5px);box-shadow:0 16px 38px rgba(0,0,0,.14)}
+.news-header{position:relative;height:150px;display:flex;align-items:center;justify-content:center}
+.news-header .emoji{font-size:52px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.25))}
+.news-date{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.92);backdrop-filter:blur(4px);border-radius:10px;padding:6px 10px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.news-date b{font-family:'Quicksand';font-size:17px;display:block;line-height:1;color:var(--blue-deep)}
+.news-date span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+.news-body{padding:16px 20px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.news-tag{align-self:flex-start;font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--blue-deep);background:#dbeafe;border-radius:999px;padding:4px 10px}
+.news-title{font-family:'Quicksand';font-size:17px;font-weight:700;color:var(--ink);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.news-desc{font-size:13.5px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+.news-link{color:var(--blue);font-weight:700;font-size:13.5px;display:inline-flex;align-items:center;gap:5px}
+.news-link:hover{color:var(--blue-deep)}
 
-/* lịch sử */
-.timeline{max-width:760px;margin:auto;position:relative;padding-left:34px}
-.timeline::before{
-  content:"";position:absolute;left:11px;top:6px;bottom:6px;width:3px;
-  background:linear-gradient(180deg,var(--blue-2),var(--sky));border-radius:99px;
-}
-.tl-item{position:relative;padding-bottom:30px}
-.tl-item:last-child{padding-bottom:0}
-.tl-item::before{
-  content:"";position:absolute;left:-30px;top:6px;width:15px;height:15px;border-radius:50%;
-  background:#fff;border:3.5px solid var(--blue-2);box-shadow:0 0 0 4px rgba(37,99,235,.14);
-}
-.tl-item b{
-  font-family:'Quicksand';color:var(--blue);font-size:14.5px;letter-spacing:.4px;
-}
-.tl-item h3{font-size:17px;margin:3px 0 5px}
-.tl-item p{color:var(--muted);font-size:14.5px}
+/* ============ DỊCH VỤ CÔNG + APP ============ */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.svc-card{background:#fff;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow-card);padding:22px;display:flex;flex-direction:column;gap:10px;transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
+.svc-card::after{content:"";position:absolute;top:-40px;right:-40px;width:110px;height:110px;border-radius:50%;background:rgba(37,99,235,.06);transition:.3s}
+.svc-card:hover{transform:translateY(-4px);border-color:#bfdbfe;box-shadow:0 14px 32px rgba(0,0,0,.12)}
+.svc-card:hover::after{transform:scale(1.4)}
+.svc-icon{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.svc-card b{font-family:'Quicksand';font-size:15.5px;position:relative;z-index:1}
+.svc-card p{font-size:13px;color:var(--muted);flex:1;position:relative;z-index:1}
+.svc-link{font-size:13px;font-weight:700;color:var(--blue);display:inline-flex;align-items:center;gap:5px;position:relative;z-index:1}
+.svc-link:hover{color:var(--blue-deep);gap:8px}
+.app-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.app-card{background:#fff;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow-card);padding:24px 16px;text-align:center;transition:transform .25s,box-shadow .25s}
+.app-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(0,0,0,.12)}
+.app-icon{width:62px;height:62px;border-radius:18px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 8px 20px rgba(0,0,0,.14)}
+.app-card b{font-family:'Quicksand';font-size:14.5px;display:block}
+.app-card span{font-size:12px;color:var(--muted);display:block;margin-top:3px}
 
-/* đoàn + dịch vụ */
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.panel{
-  background:var(--card);border:1px solid var(--line);border-radius:20px;
-  padding:30px;box-shadow:var(--shadow);
-}
-.panel h3{font-size:19px;margin-bottom:6px;display:flex;align-items:center;gap:10px}
-.panel .sub{color:var(--muted);font-size:14px;margin-bottom:20px}
-.svc{
-  display:flex;gap:14px;align-items:flex-start;
-  padding:13px 14px;border-radius:13px;transition:.2s;
-}
-.svc:hover{background:#f8fafc}
-.svc .ic{
-  width:42px;height:42px;border-radius:11px;flex:none;
-  background:linear-gradient(135deg,#dbeafe,#e0f2fe);
-  display:flex;align-items:center;justify-content:center;font-size:19px;
-}
-.svc b{font-size:14.5px;display:block}
-.svc span{font-size:12.5px;color:var(--muted)}
-.role-row{
-  display:flex;justify-content:space-between;align-items:center;gap:10px;
-  padding:12px 4px;border-bottom:1px dashed var(--line);font-size:14.5px;
-}
-.role-row:last-child{border-bottom:none}
+/* ============ TRỤ SỞ ============ */
+.truso-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.truso-card{background:#fff;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow-card);padding:22px;display:flex;gap:16px;transition:transform .25s,box-shadow .25s}
+.truso-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(0,0,0,.12)}
+.truso-icon{width:54px;height:54px;border-radius:15px;flex:none;display:flex;align-items:center;justify-content:center;font-size:25px}
+.truso-card b{font-family:'Quicksand';font-size:15.5px;display:block;margin-bottom:4px}
+.truso-card p{font-size:13px;color:var(--muted);margin-bottom:10px}
+.truso-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn-mini{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:#f8fafc;color:var(--ink);transition:.2s}
+.btn-mini:hover{border-color:var(--blue);color:var(--blue-deep);background:#eff6ff}
+.btn-mini.primary{background:var(--grad-btn);color:#fff;border:none;box-shadow:0 4px 12px rgba(37,99,235,.35)}
+.btn-mini.primary:hover{filter:brightness(1.08);color:#fff}
+
+/* ============ GIỚI THIỆU ============ */
+.intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:start}
+.panel{background:#fff;border-radius:20px;border:1px solid var(--line);box-shadow:var(--shadow-card);padding:28px}
+.panel h3{font-family:'Quicksand';font-size:18px;margin-bottom:6px;display:flex;align-items:center;gap:9px}
+.panel .sub{color:var(--muted);font-size:13.5px;margin-bottom:18px}
+.role-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 2px;border-bottom:1px dashed var(--line);font-size:14px}
+.role-row:last-of-type{border-bottom:none}
 .role-row .who{color:var(--muted);font-style:italic}
+.timeline{position:relative;padding-left:32px;max-height:none}
+.timeline::before{content:"";position:absolute;left:10px;top:6px;bottom:6px;width:3px;border-radius:99px;background:linear-gradient(180deg,var(--blue),#38bdf8)}
+.tl-item{position:relative;padding-bottom:20px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-28px;top:5px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid var(--blue);box-shadow:0 0 0 4px rgba(37,99,235,.14)}
+.tl-item b{font-family:'Quicksand';color:var(--blue-deep);font-size:13.5px}
+.tl-item p{font-size:13.5px;color:var(--muted);margin-top:2px}
 
-/* hotline */
-.hotline{
-  background:var(--grad);border-radius:20px;color:#fff;
-  padding:38px 30px;text-align:center;box-shadow:var(--shadow-lg);
-}
-.hotline h2{font-size:clamp(20px,2.8vw,26px);margin-bottom:8px}
-.hotline p{color:rgba(255,255,255,.85);margin-bottom:20px}
-.hotline .num{
-  font-family:'Quicksand';font-size:clamp(24px,4vw,34px);font-weight:700;letter-spacing:1px;
-  display:inline-flex;align-items:center;gap:12px;
-  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);
-  padding:12px 28px;border-radius:16px;
-}
-
-/* footer */
-footer{background:var(--navy);color:#94a3b8;margin-top:70px}
-.foot-grid{
-  display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:34px;
-  padding:52px 20px 36px;max-width:1120px;margin:auto;
-}
-.foot-grid h4{color:#e2e8f0;font-size:15px;margin-bottom:14px}
-.foot-grid p,.foot-grid a{font-size:14px;line-height:1.9}
-.foot-grid a{display:block;transition:.2s}
-.foot-grid a:hover{color:#fff}
-.f-brand{display:flex;align-items:center;gap:10px;color:#fff;margin-bottom:12px}
-.f-brand .logo{
-  width:38px;height:38px;border-radius:10px;background:var(--grad);
-  display:flex;align-items:center;justify-content:center;font-size:18px;
-}
-.f-brand b{font-family:'Quicksand';font-size:15.5px}
-.copyright{
-  border-top:1px solid rgba(255,255,255,.08);
-  text-align:center;padding:18px;font-size:13px;color:#64748b;
-}
+/* ============ FOOTER ============ */
+footer{margin-top:70px;background:linear-gradient(180deg,#0f172a 0%,#1e1b4b 100%);color:#94a3b8}
+.foot-main{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.3fr 1fr 1.1fr;gap:36px;padding:52px 24px 36px}
+.foot-brand{display:flex;align-items:center;gap:11px;color:#fff;margin-bottom:14px}
+.foot-brand .logo{width:44px;height:44px;border-radius:50%}
+.foot-brand b{font-family:'Quicksand';font-size:15px;display:block;line-height:1.3}
+.foot-brand span{font-size:11.5px;color:#94a3b8;display:block}
+footer p,footer a{font-size:13.5px;line-height:1.85}
+.foot-col h4{color:#e2e8f0;font-family:'Quicksand';font-size:14.5px;margin-bottom:14px}
+.foot-col a{display:block;transition:.2s}
+.foot-col a:hover{color:#fff;transform:translateX(3px)}
+.hotline-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:10px 18px;margin:12px 0;font-family:'Quicksand';font-size:19px;font-weight:700;color:#fff}
+.slogan{font-family:'Quicksand';letter-spacing:2.5px;font-size:11.5px;color:#818cf8;font-weight:700;margin:8px 0 0}
+.copyright{border-top:1px solid rgba(255,255,255,.08);text-align:center;padding:18px;font-size:12.5px;color:#64748b}
 .copyright b{color:#94a3b8}
 
-/* to top */
-.to-top{
-  position:fixed;bottom:22px;right:22px;z-index:950;
-  width:46px;height:46px;border-radius:13px;border:none;
-  background:var(--grad);color:#fff;font-size:18px;
-  box-shadow:0 10px 26px rgba(37,99,235,.4);
-  opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s;
-}
-.to-top.show{opacity:1;pointer-events:auto;transform:none}
+/* ============ MODAL ============ */
+.modal{position:fixed;inset:0;z-index:1000;background:rgba(15,23,42,.6);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:20px}
+.modal.show{display:flex}
+.modal-card{background:#fff;border-radius:22px;max-width:620px;width:100%;max-height:88vh;overflow:auto;box-shadow:0 24px 64px rgba(0,0,0,.35);animation:pop .25s ease}
+@keyframes pop{from{transform:translateY(16px) scale(.98);opacity:0}to{transform:none;opacity:1}}
+.modal-header{position:relative;height:160px;display:flex;align-items:center;justify-content:center}
+.modal-header .emoji{font-size:56px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.3))}
+.modal-close{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;border:none;background:rgba(255,255,255,.9);font-size:16px;color:var(--ink);box-shadow:0 4px 12px rgba(0,0,0,.2);z-index:2}
+.modal-title{position:absolute;bottom:0;left:0;right:0;padding:18px 24px;color:#fff;z-index:2}
+.modal-title h3{font-family:'Quicksand';font-size:23px;font-weight:800;text-shadow:0 2px 6px rgba(0,0,0,.35)}
+.modal-title span{font-size:12.5px;color:rgba(255,255,255,.85)}
+.modal-body{padding:22px 24px 26px}
+.modal-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
+.modal-stat{background:#f8fafc;border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+.modal-stat b{font-family:'Quicksand';font-size:18px;color:var(--blue-deep);display:block}
+.modal-stat span{font-size:11.5px;color:var(--muted)}
+.modal-intro{font-size:14px;color:#334155;line-height:1.75;text-align:justify}
+.modal-note{margin-top:14px;font-size:12.5px;color:var(--muted);background:#f8fafc;border:1px dashed var(--line);border-radius:12px;padding:12px 14px}
 
-/* reveal */
+/* ============ TOAST / TOP / REVEAL ============ */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:14px;font-size:13.5px;font-weight:600;box-shadow:0 12px 32px rgba(0,0,0,.3);opacity:0;transition:.3s;z-index:1100;pointer-events:none;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%)}
+.to-top{position:fixed;bottom:22px;right:22px;z-index:950;width:46px;height:46px;border-radius:13px;border:none;background:var(--grad-btn);color:#fff;font-size:18px;box-shadow:0 10px 26px rgba(37,99,235,.4);opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s}
+.to-top.show{opacity:1;pointer-events:auto;transform:none}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
 
-/* responsive */
+/* ============ RESPONSIVE ============ */
+@media(max-width:1024px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .app-grid{grid-template-columns:repeat(3,1fr)}
+  .intro-grid{grid-template-columns:1fr}
+}
 @media(max-width:900px){
-  .hero-inner{grid-template-columns:1fr;gap:30px}
-  .strip-inner{grid-template-columns:1fr 1fr}
-  .strip-item:nth-child(2){border-right:none}
-  .strip-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
-  .two-col{grid-template-columns:1fr}
-  .foot-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .cards-grid,.news-grid,.truso-grid{grid-template-columns:1fr}
+  .foot-main{grid-template-columns:1fr;gap:24px}
+  .hero{min-height:380px;padding:32px 16px 60px}
+  .hero-title{font-size:26px}
+  .hero-sub{font-size:15px}
+  .hero-logo{width:72px;height:72px}
+  .search-btn{height:38px;padding:0 18px;font-size:14px}
+  .stats-wrap{margin-top:-30px;padding:0 16px}
+  .slide{aspect-ratio:auto;min-height:210px}
+  .slide-title{font-size:15px}
+  .slide-desc{font-size:11.5px}
+  .slider-wrap{padding:0 8px;margin-top:16px}
+  .sec-title{font-size:21px}
 }
 @media(max-width:768px){
-  .nav-links{
-    position:fixed;inset:69px 0 auto 0;z-index:890;
-    background:var(--navy);flex-direction:column;padding:14px;gap:4px;
-    border-bottom:1px solid rgba(255,255,255,.1);display:none;
-  }
+  .nav-links{position:fixed;inset:61px 0 auto 0;z-index:890;background:rgba(15,23,42,.98);flex-direction:column;padding:14px;gap:4px;border-bottom:1px solid rgba(255,255,255,.1);display:none}
   .nav-links.show{display:flex}
+  .nav-links .nav-cta{margin:6px 0 0}
   .menu-btn{display:block}
+  .nav-arrow{opacity:1;width:36px;height:36px}
+  .nav-arrow.prev{left:6px}.nav-arrow.next{right:6px}
+  .svc-grid,.app-grid{grid-template-columns:repeat(2,1fr)}
+  .modal-stats{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:480px){
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .stat-card{padding:10px;gap:8px;border-radius:14px}
+  .icon-box{width:38px;height:38px;font-size:17px;border-radius:10px}
+  .stat-value{font-size:15px}
+  .stat-label{font-size:11px;line-height:1.2}
+  .app-grid,.svc-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .hero-title{font-size:21px}
 }
 </style>
 </head>
 <body id="top">
 
-<!-- ================= NAV ================= -->
+<noscript>
+  <div style="position:fixed;inset:0;background:#0f172a;color:#fff;z-index:999999;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px">
+    <div style="font-size:56px;margin-bottom:16px">⚠️</div>
+    <h1 style="font-size:22px;color:#ef4444;margin-bottom:10px">YÊU CẦU BẬT JAVASCRIPT</h1>
+    <p style="max-width:520px;color:#cbd5e1">Vui lòng bật JavaScript để sử dụng đầy đủ các tính năng tra cứu của Cổng Thông Tin xã Tập Ngãi.</p>
+  </div>
+</noscript>
+
+<!-- ================= NAVBAR ================= -->
 <nav class="nav">
   <div class="nav-inner">
     <a class="brand" href="#top">
-      <span class="logo">🏛️</span>
-      <span><b>CĐS xã Tập Ngãi</b><span>Tỉnh Vĩnh Long</span></span>
+      <img class="logo" alt="Logo Đoàn xã Tập Ngãi" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%231e40af'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)' stroke='rgba(255,255,255,.5)' stroke-width='2'/%3E%3Cpath d='M32 14l5.2 10.6 11.7 1.7-8.5 8.2 2 11.6L32 40.6 21.6 46.1l2-11.6-8.5-8.2 11.7-1.7z' fill='%23fbbf24'/%3E%3C/svg%3E">
+      <span><b>Đoàn TNCS HCM xã Tập Ngãi</b><span>Cổng Tin Tức &amp; Tra Cứu Thông Tin</span></span>
     </a>
-    <button class="menu-btn" id="menu-btn" aria-label="Menu">☰</button>
-    <div class="nav-links" id="nav">
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <div class="nav-links" id="navLinks">
       <a href="#top" class="on">Trang chủ</a>
-      <a href="#tracuu">Tra cứu ấp</a>
-      <a href="#dialy">Địa lý</a>
-      <a href="#lichsu">Lịch sử</a>
-      <a href="#doanthanhniên">Đoàn TN</a>
-      <a href="#dichvu">Dịch vụ</a>
-      <a href="#lienhe">Liên hệ</a>
+      <a href="#thon">Tra cứu Thôn</a>
+      <a href="#tintuc">Tin tức</a>
+      <a href="#dichvu">Dịch vụ công</a>
+      <a href="#truso">Trụ sở</a>
+      <a href="#gioithieu">Giới thiệu</a>
+      <button class="nav-cta" onclick="toast('🔒 Tính năng đăng nhập dành cho Ban quản trị — liên hệ Đoàn xã để được cấp tài khoản nhé!')">🔐 Đăng nhập</button>
     </div>
   </div>
 </nav>
 
 <!-- ================= HERO ================= -->
 <header class="hero">
-  <div class="wrap hero-inner">
-    <div>
-      <span class="badge">🇻🇳 Chính quyền điện tử · Cấp xã</span>
-      <h1>Cổng Thông Tin Chuyển Đổi Số<br>&amp; Quản Trị Đoàn Thanh Niên<br><em>xã Tập Ngãi</em></h1>
-      <p>Hệ thống tra cứu thông tin ấp, trụ sở hành chính, cán bộ chính quyền địa phương và các dịch vụ công ích tiện lợi — phục vụ người dân xã Tập Ngãi, tỉnh Vĩnh Long.</p>
-      <div class="hero-cta">
-        <a href="#tracuu" class="btn btn-primary">🔍 Tra cứu ấp ngay</a>
-        <a href="#dichvu" class="btn btn-ghost">📋 Dịch vụ công ích</a>
-      </div>
-    </div>
-    <div class="hero-card">
-      <h3>📊 Tổng quan xã Tập Ngãi</h3>
-      <div class="stat-grid">
-        <div class="stat"><b>58,77 km²</b><span>Diện tích tự nhiên</span></div>
-        <div class="stat"><b>31.825</b><span>Dân số (31/12/2024)</span></div>
-        <div class="stat gold"><b>11 ấp</b><span>Đơn vị hành chính</span></div>
-        <div class="stat"><b>16/6/2025</b><span>Ngày thành lập</span></div>
-      </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <img class="hero-logo" alt="Logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233b82f6'/%3E%3Cstop offset='1' stop-color='%231e40af'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g2)' stroke='rgba(255,255,255,.6)' stroke-width='2.5'/%3E%3Cpath d='M32 12l5.9 12 13.2 1.9-9.6 9.3 2.3 13.1L32 42.1l-11.8 6.2 2.3-13.1-9.6-9.3L26.1 24z' fill='%23fbbf24'/%3E%3Ccircle cx='47' cy='17' r='5' fill='%23fbbf24' opacity='.85'/%3E%3C/svg%3E">
+    <h1 class="hero-title">Cổng Theo Dõi Tin Tức<br>&amp; Tra Cứu Thông Tin</h1>
+    <div class="hero-sub">Đoàn TNCS Hồ Chí Minh xã Tập Ngãi — tỉnh Vĩnh Long</div>
+    <p class="hero-desc">Tra cứu thông tin ấp, trụ sở hành chính, cán bộ và dịch vụ công ích nhanh chóng, chính xác.</p>
+    <div class="search-box">
+      <input type="text" id="heroSearch" placeholder="Tìm kiếm tên ấp, cán bộ, dịch vụ..." aria-label="Tìm kiếm">
+      <button class="search-btn" onclick="goSearch()">🔍 Tìm kiếm <span>→</span></button>
     </div>
   </div>
 </header>
 
-<!-- ================= STATS STRIP ================= -->
-<div class="strip wrap reveal">
-  <div class="strip-inner">
-    <div class="strip-item"><b>29365</b><span>Mã hành chính</span></div>
-    <div class="strip-item"><b>541</b><span>Người/km² (mật độ)</span></div>
-    <div class="strip-item"><b>Ấp Ngãi Trung</b><span>Trụ sở UBND xã</span></div>
-    <div class="strip-item"><b>Vĩnh Long</b><span>Tỉnh trực thuộc</span></div>
+<!-- ================= STATS ================= -->
+<div class="stats-wrap reveal">
+  <div class="stats-grid" id="statsGrid"></div>
+</div>
+
+<!-- ================= BANNER SLIDER ================= -->
+<div class="slider-wrap reveal" id="bannerSlider">
+  <div class="carousel" id="carousel">
+    <div class="slides" id="slides"></div>
+    <button class="nav-arrow prev" onclick="moveSlide(-1)" aria-label="Trước">‹</button>
+    <button class="nav-arrow next" onclick="moveSlide(1)" aria-label="Sau">›</button>
+    <div class="dots" id="dots"></div>
   </div>
 </div>
 
-<!-- ================= TRA CỨU ẤP ================= -->
-<section id="tracuu">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Hành chính · Địa bàn</div>
-      <h2>Tra cứu thông tin ấp</h2>
-      <p>11 ấp thuộc xã Tập Ngãi sau sắp xếp đơn vị hành chính (1/7/2025)</p>
+<!-- ================= TRA CỨU THÔN ================= -->
+<section id="thon">
+  <div class="sec-container">
+    <div class="sec-header reveal">
+      <div>
+        <span class="sec-kicker">📍 Hành chính · Địa bàn</span>
+        <h2 class="sec-title">Tra cứu thông tin Thôn</h2>
+        <p class="sec-sub" id="thonCount">Danh sách 11 ấp trực thuộc xã Tập Ngãi, tỉnh Vĩnh Long</p>
+      </div>
     </div>
-    <div class="search-box reveal">
-      <span class="ic">🔍</span>
-      <input type="text" id="search-apa" placeholder="Nhập tên ấp cần tra cứu… (vd: Ngãi Trung, Ô Đùng)">
-    </div>
-    <div class="apa-grid reveal" id="apa-grid">
-      <div class="apa"><span class="pin">📍</span><div><b>Ấp Cây Ổi</b><span>Thôn · ấp trực thuộc xã</span></div></div>
-      <div class="apa"><span class="pin">📍</span><div><b>Ấp Giồng Tranh</b><span>Thôn · ấp trực thuộc xã</span></div></div>
-      <div class="apa"><span class="pin">📍</span><div><b>Ấp Lê Văn Quới</b><span>Thôn · ấp trực thuộc xã</span></div></div>
-      <div class="apa"><span class="pin">📍</span><div><b>Ấp Lò Ngò</b><span>Thôn · ấp trực thuộc xã</span></div></div>
-      <div class="apa"><span class="pin">📍</span><div><b>Ấp Ngãi Hòa</b><span>Thôn · ấp trực thuộc xã</span></div></div>
-      <div class="apa"><span class="pin">🏛️</span><div><b>Ấp Ngãi Trung</b><span>★ Trụ sở UBND xã Tập Ngãi</span></div></div>
-      <div class="apa"><span class="pin">📍</span><div><b>Ấp Ngô Văn Kiệt</b><span>Thôn · ấp trực thuộc xã</span></div></div>
-      <div class="apa"><span class="pin">📍</span><div><b>Ấp Ô Đùng</b><span>Thôn · ấp trực thuộc xã</span></div></div>
-      <div class="apa"><span class="pin">📍</span><div><b>Ấp Ô Trom</b><span>Thôn · ấp trực thuộc xã</span></div></div>
-      <div class="apa"><span class="pin">📍</span><div><b>Ấp Ông Xây</b><span>Thôn · ấp trực thuộc xã</span></div></div>
-      <div class="apa"><span class="pin">📍</span><div><b>Ấp Tân Đại</b><span>Thôn · ấp trực thuộc xã</span></div></div>
-    </div>
-    <div class="no-result" id="no-result">😖 Không tìm thấy ấp nào khớp — thử tên khác nha!</div>
+    <div class="cards-grid" id="thonGrid"></div>
+    <div class="no-result" id="noResult">😖 Không tìm thấy ấp nào khớp — thử tên khác nha!</div>
   </div>
 </section>
 
-<!-- ================= ĐỊA LÝ ================= -->
-<section id="dialy" style="background:#e8eef7">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Vị trí địa lý</div>
-      <h2>Giới hạn hành chính xã Tập Ngãi</h2>
-      <p>Tọa độ tâm: 9°49′22″B — 106°14′39″Đ</p>
+<!-- ================= TIN TỨC ================= -->
+<section id="tintuc" style="background:linear-gradient(180deg,#eef2fb,#f8fafc);padding:64px 0 56px;margin-top:56px">
+  <div class="sec-container">
+    <div class="sec-header reveal">
+      <div>
+        <span class="sec-kicker">📰 Tin tức · Hoạt động</span>
+        <h2 class="sec-title">Tin tức và bài viết chia sẻ</h2>
+        <p class="sec-sub">Cập nhật những thông tin, chỉ đạo và hoạt động chuyển đổi số mới nhất của Đoàn xã Tập Ngãi</p>
+      </div>
     </div>
-    <div class="geo-grid reveal">
-      <div class="geo"><span class="dir">Đ</span><b>Phía Đông</b><span>Giáp xã Châu Thành và xã Song Lộc</span></div>
-      <div class="geo"><span class="dir">T</span><b>Phía Tây</b><span>Giáp xã Tiểu Cần</span></div>
-      <div class="geo"><span class="dir">N</span><b>Phía Nam</b><span>Giáp xã Hùng Hòa</span></div>
-      <div class="geo"><span class="dir">B</span><b>Phía Bắc</b><span>Giáp xã Tân An</span></div>
-    </div>
-    <div class="map-wrap reveal">
-      <iframe title="Bản đồ xã Tập Ngãi" loading="lazy" allowfullscreen
-        src="https://www.google.com/maps?q=9.82278,106.24417&z=12&hl=vi&output=embed"></iframe>
-    </div>
+    <div class="cards-grid news-grid" id="newsGrid" style="grid-template-columns:repeat(3,1fr)"></div>
   </div>
 </section>
 
-<!-- ================= LỊCH SỬ ================= -->
-<section id="lichsu">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Lịch sử hình thành</div>
-      <h2>Các mốc sắp xếp đơn vị hành chính</h2>
-    </div>
-    <div class="timeline reveal">
-      <div class="tl-item">
-        <b>11/03/1977</b>
-        <h3>Sáp nhập vào huyện Trà Cú</h3>
-        <p>Quyết định số 59-CP: xã Tập Ngãi (thuộc huyện Tiểu Cần giải thể) được chuyển sang huyện Trà Cú, tỉnh Cửu Long.</p>
-      </div>
-      <div class="tl-item">
-        <b>15/09/1981</b>
-        <h3>Thành lập xã Ngãi Hùng</h3>
-        <p>Quyết định số 69-HĐBT: tách một phần đất của xã Tập Ngãi để thành lập xã Ngãi Hùng thuộc huyện Trà Cú.</p>
-      </div>
-      <div class="tl-item">
-        <b>29/09/1981</b>
-        <h3>Trở về huyện Tiểu Cần</h3>
-        <p>Quyết định số 98-HĐBT: xã Tập Ngãi được chuyển về huyện Tiểu Cần vừa tái lập.</p>
-      </div>
-      <div class="tl-item">
-        <b>12/06/2025</b>
-        <h3>Sáp nhập tỉnh — thuộc Vĩnh Long</h3>
-        <p>Nghị quyết số 202/2025/QH15 của Quốc hội: sáp nhập tỉnh Bến Tre và tỉnh Trà Vinh vào tỉnh Vĩnh Long.</p>
-      </div>
-      <div class="tl-item">
-        <b>16/06/2025</b>
-        <h3>Thành lập xã Tập Ngãi mới</h3>
-        <p>Nghị quyết số 1687/NQ-UBTVQH15: hợp nhất xã Tập Ngãi và xã Hiếu Tử (huyện Tiểu Cần, tỉnh Trà Vinh cũ) thành xã Tập Ngãi thuộc tỉnh Vĩnh Long — diện tích 58,77 km², dân số 31.825 người, hiệu lực từ 1/7/2025.</p>
+<!-- ================= DỊCH VỤ CÔNG ================= -->
+<section id="dichvu">
+  <div class="sec-container">
+    <div class="sec-header reveal">
+      <div>
+        <span class="sec-kicker">🛠️ Dịch vụ công quốc gia</span>
+        <h2 class="sec-title">DANH MỤC CÁC DỊCH VỤ CÔNG TRỰC TUYẾN</h2>
+        <p class="sec-sub">Tra cứu và thực hiện thủ tục hành chính, dịch vụ công trực tuyến nhanh chóng, tiện lợi</p>
       </div>
     </div>
+    <div class="svc-grid" id="svcGrid"></div>
   </div>
 </section>
 
-<!-- ================= ĐOÀN TN + DỊCH VỤ ================= -->
-<section id="dichvu" style="background:#e8eef7;padding-top:0">
-  <div class="wrap">
-    <span id="doanthanhniên" style="display:block;padding-top:64px"></span>
-    <div class="sec-head reveal">
-      <div class="kicker">Quản trị &amp; tiện ích</div>
-      <h2>Đoàn Thanh Niên &amp; Dịch vụ công ích</h2>
+<!-- ================= APP HỮU ÍCH ================= -->
+<section id="apps">
+  <div class="sec-container">
+    <div class="sec-header reveal">
+      <div>
+        <span class="sec-kicker">📱 Hướng dẫn &amp; giới thiệu</span>
+        <h2 class="sec-title">App Hữu ích dành cho ĐVTN và Nhân Dân</h2>
+        <p class="sec-sub">Những ứng dụng thiết yếu phục vụ đời sống và học tập của thanh niên, người dân</p>
+      </div>
     </div>
-    <div class="two-col">
+    <div class="app-grid" id="appGrid"></div>
+  </div>
+</section>
+
+<!-- ================= TRỤ SỞ ================= -->
+<section id="truso">
+  <div class="sec-container">
+    <div class="sec-header reveal">
+      <div>
+        <span class="sec-kicker">🏛️ Cơ quan đơn vị</span>
+        <h2 class="sec-title">Trụ sở hành chính xã Tập Ngãi</h2>
+        <p class="sec-sub">Vị trí các cơ quan của xã trên bản đồ.</p>
+      </div>
+    </div>
+    <div class="truso-grid" id="trusoGrid"></div>
+  </div>
+</section>
+
+<!-- ================= GIỚI THIỆU ================= -->
+<section id="gioithieu" style="background:linear-gradient(180deg,#eef2fb,#f8fafc);padding:64px 0 10px;margin-top:56px">
+  <div class="sec-container">
+    <div class="sec-header reveal">
+      <div>
+        <span class="sec-kicker">🤝 Về chúng tôi</span>
+        <h2 class="sec-title">Giới thiệu Đoàn xã &amp; Lịch sử hành chính</h2>
+      </div>
+    </div>
+    <div class="intro-grid">
       <div class="panel reveal">
         <h3>🤝 Ban Chấp hành Đoàn xã</h3>
-        <p class="sub">Đoàn Thanh niên Cộng sản Hồ Chí Minh xã Tập Ngãi</p>
+        <p class="sub">Đoàn Thanh niên Cộng sản Hồ Chí Minh xã Tập Ngãi, tỉnh Vĩnh Long</p>
         <div class="role-row"><span>Bí thư Đoàn xã</span><span class="who">— đang cập nhật —</span></div>
         <div class="role-row"><span>Phó Bí thư thường trực</span><span class="who">— đang cập nhật —</span></div>
         <div class="role-row"><span>Ủy viên BCH · phụ trách tình nguyện</span><span class="who">— đang cập nhật —</span></div>
         <div class="role-row"><span>Ủy viên BCH · phụ trách phong trào</span><span class="who">— đang cập nhật —</span></div>
-        <p style="margin-top:16px;font-size:13px;color:var(--muted)">
-          ℹ️ Thông tin nhân sự sẽ được Ban Thường vụ Đoàn xã cập nhật chính thức qua cổng này.
-        </p>
+        <p style="margin-top:16px;font-size:12.5px;color:var(--muted)">ℹ️ Thông tin nhân sự sẽ được Ban Thường vụ Đoàn xã cập nhật chính thức qua cổng này.</p>
       </div>
       <div class="panel reveal">
-        <h3>🛠️ Dịch vụ công ích</h3>
-        <p class="sub">Các tiện ích trực tuyến cho người dân</p>
-        <div class="svc"><span class="ic">📄</span><div><b>Tra cứu thủ tục hành chính</b><span>Giấy xác nhận, hộ tịch, đất đai… qua Cổng Dịch vụ công quốc gia</span></div></div>
-        <div class="svc"><span class="ic">🏘️</span><div><b>Thông tin ấp &amp; trụ sở</b><span>Danh bạ ấp, địa điểm làm việc của UBND xã</span></div></div>
-        <div class="svc"><span class="ic">📢</span><div><b>Thông báo của xã</b><span>Lịch thu gom rác, cúp điện nước, họp ấp…</span></div></div>
-        <div class="svc"><span class="ic">🆘</span><div><b>Báo sự cố công ích</b><span>Đường hỏng, cống tắc, cây gãy — phản ánh nhanh</span></div></div>
-        <div class="svc"><span class="ic">🎓</span><div><b>Đoàn &amp; tình nguyện</b><span>Đăng ký tham gia chiến dịch mùa hè xanh, hiến máu…</span></div></div>
+        <h3>🕰️ Các mốc hành chính</h3>
+        <p class="sub">Lịch sử sắp xếp đơn vị hành chính xã Tập Ngãi</p>
+        <div class="timeline">
+          <div class="tl-item"><b>11/03/1977</b><p>Sáp nhập vào huyện Trà Cú theo Quyết định 59-CP.</p></div>
+          <div class="tl-item"><b>15/09/1981</b><p>Tách một phần đất thành lập xã Ngãi Hùng (QĐ 69-HĐBT).</p></div>
+          <div class="tl-item"><b>29/09/1981</b><p>Chuyển về huyện Tiểu Cần vừa tái lập (QĐ 98-HĐBT).</p></div>
+          <div class="tl-item"><b>12/06/2025</b><p>Sáp nhập tỉnh Bến Tre, Trà Vinh vào tỉnh Vĩnh Long (NQ 202/2025/QH15).</p></div>
+          <div class="tl-item"><b>16/06/2025</b><p>Hợp nhất xã Tập Ngãi và xã Hiếu Tử thành xã Tập Ngãi, tỉnh Vĩnh Long (NQ 1687/NQ-UBTVQH15).</p></div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= HOTLINE ================= -->
-<section id="lienhe">
-  <div class="wrap">
-    <div class="hotline reveal">
-      <h2>📞 Tổng đài hỗ trợ người dân</h2>
-      <p>UBND xã Tập Ngãi — Ấp Ngãi Trung, xã Tập Ngãi, tỉnh Vĩnh Long</p>
-      <a class="num" href="tel:02910385xxx">☎️ 02910 385 xxx</a>
-      <p style="margin:18px 0 0;font-size:13.5px;color:rgba(255,255,255,.75)">
-        * Số điện thoại chính thức sẽ được UBND xã cập nhật — mã hành chính xã: <b>29365</b>
-      </p>
     </div>
   </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
 <footer>
-  <div class="foot-grid">
+  <div class="foot-main">
     <div>
-      <div class="f-brand">
-        <span class="logo">🏛️</span>
-        <b>Cổng CĐS xã Tập Ngãi</b>
+      <div class="foot-brand">
+        <img class="logo" alt="Logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%231e40af'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g3)' stroke='rgba(255,255,255,.5)' stroke-width='2'/%3E%3Cpath d='M32 14l5.2 10.6 11.7 1.7-8.5 8.2 2 11.6L32 40.6 21.6 46.1l2-11.6-8.5-8.2 11.7-1.7z' fill='%23fbbf24'/%3E%3C/svg%3E">
+        <span><b>Đoàn TNCS Hồ Chí Minh xã Tập Ngãi</b><span>Cổng Theo Dõi Tin Tức &amp; Tra Cứu Thông Tin</span></span>
       </div>
-      <p>Cổng thông tin chuyển đổi số &amp; quản trị Đoàn Thanh niên xã Tập Ngãi — tra cứu ấp, trụ sở, cán bộ và dịch vụ công ích cho người dân tỉnh Vĩnh Long.</p>
+      <p>Cổng thông tin theo dõi tin tức, tra cứu thông tin ấp, phục vụ người dân và cán bộ địa phương tra cứu nhanh chóng, chính xác.</p>
+      <p class="slogan">TIÊN PHONG • ĐOÀN KẾT • BẢN LĨNH • ĐỘT PHÁ • PHÁT TRIỂN</p>
     </div>
-    <div>
+    <div class="foot-col">
       <h4>Liên kết nhanh</h4>
-      <a href="#tracuu">Tra cứu ấp</a>
-      <a href="#dialy">Địa lý &amp; bản đồ</a>
-      <a href="#lichsu">Lịch sử hành chính</a>
-      <a href="#doanthanhniên">Đoàn Thanh niên</a>
-      <a href="#dichvu">Dịch vụ công ích</a>
+      <a href="#thon">📍 Tra cứu thông tin ấp</a>
+      <a href="#tintuc">📰 Tin tức &amp; hoạt động</a>
+      <a href="#dichvu">🛠️ Dịch vụ công trực tuyến</a>
+      <a href="#truso">🏛️ Trụ sở hành chính</a>
+      <a href="#gioithieu">🤝 Giới thiệu Đoàn xã</a>
     </div>
-    <div>
-      <h4>Thông tin xã</h4>
-      <p>📍 Trụ sở UBND: Ấp Ngãi Trung</p>
-      <p>🏘️ 11 ấp trực thuộc</p>
-      <p>🗺️ Diện tích: 58,77 km² · Dân số: 31.825</p>
-      <p>🔢 Mã hành chính: 29365</p>
-      <p>🌾 Thuộc tỉnh Vĩnh Long (sau sáp nhập 2025)</p>
+    <div class="foot-col">
+      <h4>Liên hệ hỗ trợ Công tác Đoàn</h4>
+      <a class="hotline-pill" href="tel:02910385xxx">☎️ 02910 385 xxx</a>
+      <p>📧 <a href="mailto:doanxatapngai@gmail.com" style="display:inline">doanxatapngai@gmail.com</a></p>
+      <p>📍 UBND xã Tập Ngãi — Ấp Ngãi Trung, xã Tập Ngãi, tỉnh Vĩnh Long</p>
+      <p>🔢 Mã hành chính xã: <b style="color:#cbd5e1">29365</b></p>
     </div>
   </div>
-  <div class="copyright">© 2026 <b>Cổng Thông Tin Chuyển Đổi Số xã Tập Ngãi</b> — Dữ liệu hành chính tham khảo theo Nghị quyết 1687/NQ-UBTVQH15</div>
+  <div class="copyright">© 2026 <b>Đoàn TNCS Hồ Chí Minh xã Tập Ngãi</b> — Dữ liệu hành chính tham khảo theo Nghị quyết 1687/NQ-UBTVQH15</div>
 </footer>
 
+<!-- ================= MODAL CHI TIẾT ẤP ================= -->
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modal-card">
+    <div class="modal-header" id="modalHeader">
+      <span class="emoji" id="modalEmoji">🏘️</span>
+      <div class="card-overlay"></div>
+      <div class="modal-title"><h3 id="modalTitle"></h3><span id="modalSub"></span></div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Đóng">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-stats" id="modalStats"></div>
+      <div class="modal-intro" id="modalIntro"></div>
+      <div class="modal-note">ℹ️ Số liệu chi tiết của ấp sẽ được Ban biên tập cổng cập nhật khi có thông tin chính thức từ UBND xã.</div>
+    </div>
+  </div>
+</div>
+
 <button class="to-top" id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Lên đầu trang">↑</button>
+<div class="toast" id="toast"></div>
 
 <script>
+/* ================================================================
+   DỮ LIỆU CẤU HÌNH — chỉnh sửa tại đây để cập nhật nội dung cổng
+   ================================================================ */
+const CAI_DAT = {
+  tenCong: "Đoàn TNCS Hồ Chí Minh xã Tập Ngãi",
+  hotline: "02910 385 xxx",
+  email: "doanxatapngai@gmail.com"
+};
+
+const STATS = [
+  { icon:"🗺️", bg:"linear-gradient(135deg,#dbeafe,#bfdbfe)", value:"58,77 km²", label:"Diện tích tự nhiên" },
+  { icon:"🏘️", bg:"linear-gradient(135deg,#fef3c7,#fde68a)", value:"11 ấp", label:"Số ấp trực thuộc" },
+  { icon:"👥", bg:"linear-gradient(135deg,#dcfce7,#bbf7d0)", value:"31.825", label:"Dân số (31/12/2024)" },
+  { icon:"🏛️", bg:"linear-gradient(135deg,#e0e7ff,#c7d2fe)", value:"29365", label:"Mã hành chính xã" }
+];
+
+const GRADS = [
+  "linear-gradient(135deg,#1d4ed8,#3b82f6)",
+  "linear-gradient(135deg,#0ea5e9,#2563eb)",
+  "linear-gradient(135deg,#1e40af,#6366f1)",
+  "linear-gradient(135deg,#0369a1,#38bdf8)",
+  "linear-gradient(135deg,#4f46e5,#818cf8)",
+  "linear-gradient(135deg,#1d4ed8,#0ea5e9)"
+];
+
+const THON = [
+  { ten:"Ấp Cây Ổi",      ubnd:false },
+  { ten:"Ấp Giồng Tranh", ubnd:false },
+  { ten:"Ấp Lê Văn Quới", ubnd:false },
+  { ten:"Ấp Lò Ngò",      ubnd:false },
+  { ten:"Ấp Ngãi Hòa",    ubnd:false },
+  { ten:"Ấp Ngãi Trung",  ubnd:true },
+  { ten:"Ấp Ngô Văn Kiệt",ubnd:false },
+  { ten:"Ấp Ô Đùng",      ubnd:false },
+  { ten:"Ấp Ô Trom",      ubnd:false },
+  { ten:"Ấp Ông Xây",     ubnd:false },
+  { ten:"Ấp Tân Đại",     ubnd:false }
+];
+
+const BANNERS = [
+  { title:"CHUYỂN ĐỔI SỐ XÃ TẬP NGÃI — NÂNG CẤP TRẢI NGHIỆM NGƯỜI DÂN",
+    desc:"Cổng thông tin tra cứu ấp, trụ sở, cán bộ và dịch vụ công chính thức của Đoàn TNCS Hồ Chí Minh xã Tập Ngãi, tỉnh Vĩnh Long.",
+    g:"linear-gradient(135deg,#1d4ed8 0%,#1e40af 55%,#172554 100%)", emoji:"🚀" },
+  { title:"DỊCH VỤ CÔNG TRỰC TUYẾN — GIẢI QUYẾT TẬN NHÀ",
+    desc:"Thực hiện thủ tục hành chính qua Cổng Dịch vụ công Quốc gia và VNeID: hộ tịch, đất đai, xác nhận cư trú... không cần xếp hàng.",
+    g:"linear-gradient(135deg,#0369a1 0%,#2563eb 60%,#4f46e5 100%)", emoji:"🛠️" },
+  { title:"PHONG TRÀO THANH NIÊN TÌNH NGUYỆN 2026",
+    desc:"Mùa hè xanh, hiến máu nhân đạo, bảo vệ môi trường — Đoàn xã Tập Ngãi đồng hành cùng thanh niên xây dựng quê hương.",
+    g:"linear-gradient(135deg,#4f46e5 0%,#7c3aed 60%,#1e40af 100%)", emoji:"🤝" }
+];
+
+const NEWS = [
+  { d:"14", m:"THÁNG 9", tag:"Chuyển đổi số",
+    title:"Chuyển đổi số trong công tác Đoàn và phong trào thanh niên xã nhà",
+    desc:"Chỉ thị của Ban Bí thư Trung ương Đoàn về đẩy mạnh chuyển đổi số trong công tác Đoàn và phong trào thanh niên giai đoạn mới.",
+    g:"linear-gradient(135deg,#1d4ed8,#3b82f6)", emoji:"📰" },
+  { d:"02", m:"THÁNG 9", tag:"Hướng dẫn",
+    title:"Hướng dẫn cài đặt và sử dụng VNeID cấp 2 cho người dân xã Tập Ngãi",
+    desc:"Các bước cài đặt ứng dụng định danh quốc gia, thủ tục xác thực và những quyền lợi khi sử dụng tài khoản định danh cấp 2.",
+    g:"linear-gradient(135deg,#0369a1,#38bdf8)", emoji:"📱" },
+  { d:"20", m:"THÁNG 8", tag:"Tình nguyện",
+    title:"Mùa hè xanh 2026: chiến dịch tình nguyện hè rực rỡ của Đoàn xã",
+    desc:"Tổng kết chuỗi hoạt động tình nguyện mùa hè: sửa đường, trao học bổng, dạy học miễn phí và chăm sóc di tích trên địa bàn xã.",
+    g:"linear-gradient(135deg,#4f46e5,#818cf8)", emoji:"🤝" }
+];
+
+const DICH_VU = [
+  { icon:"🏛️", bg:"linear-gradient(135deg,#dbeafe,#bfdbfe)", ten:"Cổng Dịch vụ công Quốc gia", desc:"Nộp hồ sơ trực tuyến, theo dõi tiến độ xử lý thủ tục hành chính toàn quốc.", link:"https://dichvucong.gov.vn" },
+  { icon:"🪪", bg:"linear-gradient(135deg,#dcfce7,#bbf7d0)", ten:"VNeID — Định danh điện tử", desc:"Tài khoản định danh cấp 2: chứng minh CCCD trên điện thoại, khai báo cư trú.", link:"https://vneid.gov.vn" },
+  { icon:"🩺", bg:"linear-gradient(135deg,#fee2e2,#fecaca)", ten:"VssID — BHXH số", desc:"Tra cứu sổ BHXH, thẻ y tế điện tử, lịch sử đóng - hưởng bảo hiểm.", link:"https://vssid.baohiemxahoi.gov.vn" },
+  { icon:"💰", bg:"linear-gradient(135deg,#fef3c7,#fde68a)", ten:"Thuế điện tử eTax", desc:"Kê khai, nộp thuế và tra cứu nghĩa vụ thuế đối với hộ kinh doanh, cá nhân.", link:"https://thuedientu.gdt.gov.vn" },
+  { icon:"🏘️", bg:"linear-gradient(135deg,#e0e7ff,#c7d2fe)", ten:"Dịch vụ công tỉnh Vĩnh Long", desc:"Hồ sơ thủ tục hành chính thuộc thẩm quyền giải quyết của tỉnh và cấp xã.", link:"https://dichvucong.vinhlong.gov.vn" },
+  { icon:"📄", bg:"linear-gradient(135deg,#cffafe,#a5f3fc)", ten:"Tra cứu hộ tịch điện tử", desc:"Tra cứu bản sao giấy tờ, trích lục hộ tịch (khai sinh, kết hôn, tử) đã số hóa.", link:"https://hoso.tphochi.gov.vn" }
+];
+
+const APPS = [
+  { icon:"🪪", bg:"linear-gradient(135deg,#2563eb,#1d4ed8)", ten:"VNeID", desc:"Định danh quốc gia" },
+  { icon:"🩺", bg:"linear-gradient(135deg,#16a34a,#15803d)", ten:"VssID", desc:"BHXH trên VNeID" },
+  { icon:"🗺️", bg:"linear-gradient(135deg,#ea580c,#c2410c)", ten:"Google Maps", desc:"Chỉ đường chính xác" },
+  { icon:"💬", bg:"linear-gradient(135deg,#0891b2,#0e7490)", ten:"Zalo", desc:"Kết nối Đoàn xã" }
+];
+
+const TRU_SO = [
+  { icon:"🏛️", bg:"linear-gradient(135deg,#2563eb,#1d4ed8)", ten:"UBND xã Tập Ngãi",
+    diaChi:"Ấp Ngãi Trung, xã Tập Ngãi, tỉnh Vĩnh Long",
+    map:"https://www.google.com/maps/search/UBND+xã+Tập+Ngãi+Vĩnh+Long" },
+  { icon:"🚩", bg:"linear-gradient(135deg,#dc2626,#b91c1c)", ten:"Đảng ủy - HĐND - Ủy ban MTTQ xã",
+    diaChi:"Ấp Ngãi Trung, xã Tập Ngãi, tỉnh Vĩnh Long",
+    map:"https://www.google.com/maps/search/Đảng+ủy+xã+Tập+Ngãi+Vĩnh+Long" },
+  { icon:"🛡️", bg:"linear-gradient(135deg,#4f46e5,#3730a3)", ten:"Công an xã Tập Ngãi",
+    diaChi:"Xã Tập Ngãi, tỉnh Vĩnh Long",
+    map:"https://www.google.com/maps/search/Công+an+xã+Tập+Ngãi+Vĩnh+Long" },
+  { icon:"🤝", bg:"linear-gradient(135deg,#0891b2,#0e7490)", ten:"Đoàn TNCS Hồ Chí Minh xã",
+    diaChi:"Trụ sở UBND xã Tập Ngãi, Ấp Ngãi Trung",
+    map:"https://www.google.com/maps/search/UBND+xã+Tập+Ngãi+Vĩnh+Long" }
+];
+
+/* ================================================================
+   RENDER
+   ================================================================ */
+const $ = id => document.getElementById(id);
+
+// Stats
+$('statsGrid').innerHTML = STATS.map(s => `
+  <div class="stat-card">
+    <div class="icon-box" style="background:${s.bg}">${s.icon}</div>
+    <div><div class="stat-value">${s.value}</div><div class="stat-label">${s.label}</div></div>
+  </div>`).join('');
+
+// Banner slider
+$('slides').innerHTML = BANNERS.map(b => `
+  <div class="slide" onclick="toast('📢 ${b.title.slice(0,42)}...')">
+    <div class="bg" style="background:${b.g}"></div>
+    <div class="slide-overlay">
+      <div class="slide-title">${b.emoji} ${b.title}</div>
+      <p class="slide-desc">${b.desc}</p>
+    </div>
+  </div>`).join('');
+$('dots').innerHTML = BANNERS.map((_,i) => `<button class="dot${i?'':' on'}" onclick="goSlide(${i})" aria-label="Slide ${i+1}"></button>`).join('');
+
+// Thôn cards
+function grad(i){ return GRADS[i % GRADS.length]; }
+function renderThon(q){
+  const norm = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+  const list = THON.map((t,i)=>({...t, g:grad(i), i})).filter(t =>
+    !q || norm(t.ten).includes(norm(q)));
+  $('thonGrid').innerHTML = list.map(t => `
+    <div class="thon-card">
+      <div class="card-header" style="background:${t.g}">
+        <span class="emoji">${t.ubnd ? '🏛️' : '🏘️'}</span>
+        <div class="card-overlay"></div>
+        <div class="header-content">
+          <h3 class="thon-title">${t.ten}</h3>
+          <span class="thon-sub">${t.ubnd ? '★ Trụ sở UBND xã Tập Ngãi' : 'Ấp trực thuộc xã Tập Ngãi'}</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="info-row">
+          <div class="info-item"><span class="icon-ho">🏠</span><div><b>—</b><span>Số hộ dân</span></div></div>
+          <div class="info-item"><span class="icon-dan">👥</span><div><b>—</b><span>Nhân khẩu</span></div></div>
+        </div>
+        <div class="nv-row"><span class="icon-loc">📍</span><span class="nv-text">Nhà văn hóa ấp — đang cập nhật</span></div>
+        <div class="card-footer">
+          <button class="detail-btn" onclick="openModal(${t.i})">Xem chi tiết <span>→</span></button>
+        </div>
+      </div>
+    </div>`).join('');
+  $('noResult').style.display = list.length ? 'none' : 'block';
+  $('thonCount').textContent = q ? `Tìm thấy ${list.length}/${THON.length} ấp khớp với " ${q} "` : `Danh sách ${THON.length} ấp trực thuộc xã Tập Ngãi, tỉnh Vĩnh Long`;
+}
+renderThon('');
+
+// News
+$('newsGrid').innerHTML = NEWS.map(n => `
+  <div class="news-card">
+    <div class="news-header" style="background:${n.g}">
+      <span class="emoji">${n.emoji}</span>
+      <div class="news-date"><b>${n.d}</b><span>${n.m}</span></div>
+    </div>
+    <div class="news-body">
+      <span class="news-tag">${n.tag}</span>
+      <h3 class="news-title">${n.title}</h3>
+      <p class="news-desc">${n.desc}</p>
+      <a class="news-link" href="javascript:void(0)" onclick="toast('📄 Bài viết đầy đủ sẽ được cập nhật bởi Ban biên tập cổng.')">Đọc tiếp <span>→</span></a>
+    </div>
+  </div>`).join('');
+
+// Dịch vụ công
+$('svcGrid').innerHTML = DICH_VU.map(s => `
+  <div class="svc-card">
+    <div class="svc-icon" style="background:${s.bg}">${s.icon}</div>
+    <b>${s.ten}</b><p>${s.desc}</p>
+    <a class="svc-link" href="${s.link}" target="_blank" rel="noopener">Truy cập dịch vụ <span>→</span></a>
+  </div>`).join('');
+
+// Apps
+$('appGrid').innerHTML = APPS.map(a => `
+  <div class="app-card">
+    <div class="app-icon" style="background:${a.bg}">${a.icon}</div>
+    <b>${a.ten}</b><span>${a.desc}</span>
+  </div>`).join('');
+
+// Trụ sở
+$('trusoGrid').innerHTML = TRU_SO.map(t => `
+  <div class="truso-card">
+    <div class="truso-icon" style="background:${t.bg}">${t.icon}</div>
+    <div style="flex:1">
+      <b>${t.ten}</b>
+      <p>📍 ${t.diaChi}<br>📞 ${CAI_DAT.hotline}</p>
+      <div class="truso-actions">
+        <a class="btn-mini primary" href="${t.map}" target="_blank" rel="noopener">🧭 Chỉ đường</a>
+        <button class="btn-mini" onclick="toast('📞 Số điện thoại cơ quan sẽ được UBND xã cập nhật chính thức.')">ℹ️ Chi tiết</button>
+      </div>
+    </div>
+  </div>`).join('');
+
+/* ================================================================
+   TƯƠNG TÁC
+   ================================================================ */
+// Modal chi tiết ấp
+function openModal(i){
+  const t = THON[i];
+  $('modalHeader').style.background = grad(i);
+  $('modalEmoji').textContent = t.ubnd ? '🏛️' : '🏘️';
+  $('modalTitle').textContent = t.ten;
+  $('modalSub').textContent = t.ubnd ? '★ Trụ sở UBND xã Tập Ngãi' : 'Ấp trực thuộc xã Tập Ngãi';
+  $('modalStats').innerHTML = [
+    ['🏠','Số hộ dân','—'], ['👥','Nhân khẩu','—'], ['📍','Nhà văn hóa','Đang cập nhật']
+  ].map(s => `<div class="modal-stat"><b>${s[2]}</b><span>${s[1]}</span></div>`).join('');
+  $('modalIntro').innerHTML =
+    `<b>${t.ten}</b> là một trong ${THON.length} ấp trực thuộc xã Tập Ngãi, tỉnh Vĩnh Long` +
+    (t.ubnd ? ' — đồng thời là nơi đặt trụ sở làm việc của UBND xã.' : '.') +
+    ` Sau Nghị quyết 1687/NQ-UBTVQH15 hiệu lực từ 1/7/2025, xã Tập Ngãi được thành lập trên cơ sở hợp nhất xã Tập Ngãi và xã Hiếu Tử (huyện Tiểu Cần, tỉnh Trà Vinh cũ), có diện tích tự nhiên 58,77 km² và 31.825 nhân khẩu.`;
+  $('modal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(){ $('modal').classList.remove('show'); document.body.style.overflow = ''; }
+$('modal').addEventListener('click', e => { if(e.target === $('modal')) closeModal(); });
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
+
+// Hero search
+function goSearch(){
+  const q = $('heroSearch').value.trim();
+  renderThon(q);
+  document.getElementById('thon').scrollIntoView({behavior:'smooth'});
+  if(q) toast(`🔍 Đang lọc ấp theo từ khóa " ${q} "`);
+}
+$('heroSearch').addEventListener('keydown', e => { if(e.key === 'Enter') goSearch(); });
+
+// Slider
+let cur = 0, timer;
+function goSlide(i){
+  cur = (i + BANNERS.length) % BANNERS.length;
+  $('slides').style.transform = `translateX(-${cur*100}%)`;
+  document.querySelectorAll('.dot').forEach((d,k)=>d.classList.toggle('on', k===cur));
+}
+function moveSlide(step){ goSlide(cur + step); resetTimer(); }
+function resetTimer(){ clearInterval(timer); timer = setInterval(()=>goSlide(cur+1), 5000); }
+resetTimer();
+$('carousel').addEventListener('mouseenter', ()=>clearInterval(timer));
+$('carousel').addEventListener('mouseleave', resetTimer);
+// Swipe
+let sx = null;
+$('carousel').addEventListener('pointerdown', e => sx = e.clientX);
+$('carousel').addEventListener('pointerup', e => {
+  if(sx === null) return;
+  const dx = e.clientX - sx; sx = null;
+  if(Math.abs(dx) > 40) moveSlide(dx < 0 ? 1 : -1);
+});
+
+// Nav active on scroll
+const secs = [...document.querySelectorAll('section[id],header.hero,footer')];
+window.addEventListener('scroll', () => {
+  const y = window.scrollY + 120;
+  let active = 'top';
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    const id = a.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    if(el && el.offsetTop <= y) active = id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + active));
+  $('toTop').classList.toggle('show', window.scrollY > 500);
+}, {passive:true});
+
 // Menu mobile
-document.getElementById('menu-btn').addEventListener('click',function(){
-  document.getElementById('nav').classList.toggle('show');
-});
-document.querySelectorAll('#nav a').forEach(function(a){
-  a.addEventListener('click',function(){document.getElementById('nav').classList.remove('show')});
-});
+$('menuBtn').addEventListener('click', ()=>$('navLinks').classList.toggle('show'));
+document.querySelectorAll('#navLinks a').forEach(a => a.addEventListener('click', ()=>$('navLinks').classList.remove('show')));
 
-// Tra cứu ấp — lọc realtime
-var searchInput=document.getElementById('search-apa');
-var apaCards=document.querySelectorAll('#apa-grid .apa');
-var noResult=document.getElementById('no-result');
-searchInput.addEventListener('input',function(){
-  var q=this.value.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-  var shown=0;
-  apaCards.forEach(function(card){
-    var name=card.querySelector('b').textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-    var ok=!q||name.indexOf(q)>=0;
-    card.style.display=ok?'flex':'none';
-    if(ok)shown++;
-  });
-  noResult.style.display=shown?'none':'block';
-});
+// Reveal
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+}), {threshold:.1});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Reveal on scroll
-var io=new IntersectionObserver(function(entries){
-  entries.forEach(function(e){
-    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
-  });
-},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-
-// To top
-var toTop=document.getElementById('toTop');
-window.addEventListener('scroll',function(){
-  toTop.classList.toggle('show',window.scrollY>500);
-},{passive:true});
+// Toast
+let toastTimer;
+function toast(msg){
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'), 3200);
+}
 </script>
 </body>
 </html>

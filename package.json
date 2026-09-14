@@ -4,6 +4,8 @@
   "private": true,
   "description": "Twie Crochet — handmade crochet shop landing page",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build:portal": "cd portal && npm run build",
+    "dev:portal": "cd portal && npm run dev"
   }
 }
