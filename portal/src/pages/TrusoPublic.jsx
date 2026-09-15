@@ -8,10 +8,12 @@ export default function TrusoPublic() {
     <section style={{ paddingTop: 40 }}>
       <div className="sec-container">
         <div className="sec-header reveal">
-          <div>
-            <span className="sec-kicker">🏛️ Cơ quan đơn vị</span>
-            <h2 className="sec-title">Trụ sở hành chính xã Tập Ngãi</h2>
-            <p className="sec-sub">Vị trí các cơ quan của xã trên bản đồ.</p>
+          <div className="title-group">
+            <span className="icon-badge">🏛️</span>
+            <div>
+              <h2 className="sec-title">Trụ sở hành chính xã Tập Ngãi</h2>
+              <p className="sec-sub">Vị trí các cơ quan của xã trên bản đồ.</p>
+            </div>
           </div>
         </div>
         <div className="truso-grid">

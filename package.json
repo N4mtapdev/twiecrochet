@@ -1,11 +1,14 @@
 {
-  "name": "twie-crochet",
+  "name": "portal-tap-ngai",
   "version": "1.0.0",
   "private": true,
-  "description": "Twie Crochet — handmade crochet shop landing page",
+  "description": "Cổng Theo Dõi Tin Tức & Tra Cứu Thông Tin — xã Tập Ngãi, Vĩnh Long (React + Vite SPA)",
   "scripts": {
     "start": "node server.js",
-    "build:portal": "cd portal && npm run build",
-    "dev:portal": "cd portal && npm run dev"
+    "build": "cd portal && npm run build",
+    "dev": "cd portal && npm run dev"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

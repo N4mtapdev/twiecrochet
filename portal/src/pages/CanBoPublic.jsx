@@ -8,10 +8,12 @@ export default function CanBoPublic() {
     <section style={{ paddingTop: 40 }}>
       <div className="sec-container">
         <div className="sec-header reveal">
-          <div>
-            <span className="sec-kicker">👤 Nhân sự</span>
-            <h2 className="sec-title">Cán bộ, công chức trên địa bàn</h2>
-            <p className="sec-sub">Danh bạ cán bộ Đoàn xã và công chức chuyên môn phụ trách các ấp.</p>
+          <div className="title-group">
+            <span className="icon-badge">👤</span>
+            <div>
+              <h2 className="sec-title">Cán bộ, công chức trên địa bàn</h2>
+              <p className="sec-sub">Danh bạ cán bộ Đoàn xã và công chức chuyên môn phụ trách các ấp.</p>
+            </div>
           </div>
         </div>
         <div className="panel reveal" style={{ overflowX: 'auto' }}>

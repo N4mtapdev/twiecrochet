@@ -8,10 +8,12 @@ export default function BaiViet() {
     <section style={{ paddingTop: 40 }}>
       <div className="sec-container">
         <div className="sec-header reveal">
-          <div>
-            <span className="sec-kicker">📰 Tin tức · Hoạt động</span>
-            <h2 className="sec-title">Tin tức và bài viết chia sẻ</h2>
-            <p className="sec-sub">Cập nhật những thông tin, chỉ đạo và hoạt động chuyển đổi số mới nhất của Đoàn xã Tập Ngãi</p>
+          <div className="title-group">
+            <span className="icon-badge">📰</span>
+            <div>
+              <h2 className="sec-title">Tin tức và bài viết chia sẻ</h2>
+              <p className="sec-sub">Cập nhật những thông tin, chỉ đạo và hoạt động chuyển đổi số mới nhất của Đoàn xã Tập Ngãi</p>
+            </div>
           </div>
         </div>
         <div className="cards-grid cols-3">

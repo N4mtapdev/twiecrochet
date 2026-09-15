@@ -7,10 +7,12 @@ export default function DichVuCong() {
     <section style={{ paddingTop: 40 }}>
       <div className="sec-container">
         <div className="sec-header reveal">
-          <div>
-            <span className="sec-kicker">🛠️ Dịch vụ công quốc gia</span>
-            <h2 className="sec-title">DANH MỤC CÁC DỊCH VỤ CÔNG TRỰC TUYẾN</h2>
-            <p className="sec-sub">Tra cứu và thực hiện thủ tục hành chính, dịch vụ công trực tuyến nhanh chóng, tiện lợi</p>
+          <div className="title-group">
+            <span className="icon-badge">🛠️</span>
+            <div>
+              <h2 className="sec-title">Danh mục các dịch vụ công trực tuyến</h2>
+              <p className="sec-sub">Tra cứu và thực hiện thủ tục hành chính, dịch vụ công trực tuyến nhanh chóng, tiện lợi</p>
+            </div>
           </div>
         </div>
         <div className="svc-grid">
@@ -34,10 +36,12 @@ export function ThuTucHanhChinh() {
     <section style={{ paddingTop: 40 }}>
       <div className="sec-container">
         <div className="sec-header reveal">
-          <div>
-            <span className="sec-kicker">📱 Hướng dẫn &amp; giới thiệu</span>
-            <h2 className="sec-title">App Hữu ích dành cho ĐVTN và Nhân Dân</h2>
-            <p className="sec-sub">Giới thiệu, Hướng dẫn các App, ứng dụng hữu ích.</p>
+          <div className="title-group">
+            <span className="icon-badge">📱</span>
+            <div>
+              <h2 className="sec-title">App hữu ích dành cho ĐVTN và Nhân dân</h2>
+              <p className="sec-sub">Giới thiệu, Hướng dẫn các App, ứng dụng hữu ích.</p>
+            </div>
           </div>
         </div>
         <div className="svc-grid">

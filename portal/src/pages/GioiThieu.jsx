@@ -45,10 +45,12 @@ export function GioiThieu() {
     <section style={{ paddingTop: 40 }}>
       <div className="sec-container">
         <div className="sec-header reveal">
-          <div>
-            <span className="sec-kicker">🏛️ Về địa phương</span>
-            <h2 className="sec-title">Giới thiệu chung</h2>
-            <p className="sec-sub">Địa lý, lịch sử và đơn vị hành chính xã Tập Ngãi, tỉnh Vĩnh Long</p>
+          <div className="title-group">
+            <span className="icon-badge">🏛️</span>
+            <div>
+              <h2 className="sec-title">Giới thiệu chung</h2>
+              <p className="sec-sub">Địa lý, lịch sử và đơn vị hành chính xã Tập Ngãi, tỉnh Vĩnh Long</p>
+            </div>
           </div>
         </div>
         <div className="two-col">
@@ -76,10 +78,12 @@ export function GioiThieuDoanXa() {
     <section style={{ paddingTop: 40 }}>
       <div className="sec-container">
         <div className="sec-header reveal">
-          <div>
-            <span className="sec-kicker">🤝 Về chúng tôi</span>
-            <h2 className="sec-title">Giới thiệu Đoàn xã</h2>
-            <p className="sec-sub">{CAI_DAT.tenCong}</p>
+          <div className="title-group">
+            <span className="icon-badge">🤝</span>
+            <div>
+              <h2 className="sec-title">Giới thiệu Đoàn xã</h2>
+              <p className="sec-sub">{CAI_DAT.tenCong}</p>
+            </div>
           </div>
         </div>
         <div className="two-col">
@@ -104,10 +108,12 @@ export function GioiThieuLanhDao() {
     <section style={{ paddingTop: 40 }}>
       <div className="sec-container">
         <div className="sec-header reveal">
-          <div>
-            <span className="sec-kicker">👤 Ban chấp hành</span>
-            <h2 className="sec-title">Giới thiệu Ban Chấp hành &amp; Bí thư Đoàn xã</h2>
-            <p className="sec-sub">Đồng chí lãnh đạo đứng đầu công tác Đoàn và phong trào thanh niên xã nhà</p>
+          <div className="title-group">
+            <span className="icon-badge">👤</span>
+            <div>
+              <h2 className="sec-title">Giới thiệu Ban Chấp hành &amp; Bí thư Đoàn xã</h2>
+              <p className="sec-sub">Đồng chí lãnh đạo đứng đầu công tác Đoàn và phong trào thanh niên xã nhà</p>
+            </div>
           </div>
         </div>
         <div className="panel reveal">

@@ -30,7 +30,7 @@ export default function Footer() {
           <a className="hotline-pill" href={`tel:${CAI_DAT.hotline.replace(/\s/g, '')}`}>☎️ {CAI_DAT.hotline}</a>
           <p>📧 <a style={{ display: 'inline' }} href={`mailto:${CAI_DAT.email}`}>{CAI_DAT.email}</a></p>
           <p>📍 {CAI_DAT.diaChi}</p>
-          <p>🔢 Mã hành chính xã: <b style={{ color: '#cbd5e1' }}>29365</b></p>
+          <p>🔢 Mã hành chính xã: <b>29365</b></p>
         </div>
       </div>
       <div className="copyright">
